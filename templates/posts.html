@@ -55,7 +55,7 @@
          <p> {{ post.body }}<br></p> 
       </br>
       {% if post.image %}
-       <img class="post-border" src="{{ post.image.url }}"style="width:370px;height:370px">
+       <img class="post-border" src="{{ post.image.url }}">
       {% endif %}
       <div class="icon_list">
          <form id="likes-form" action="{% url 'like_post' post.pk %}" method='POST'>
